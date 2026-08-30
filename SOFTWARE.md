@@ -40,7 +40,7 @@ but various implementations, as well as the original source code can be used as 
 [Anthony Hay](https://github.com/anthay/ELIZA/tree/master)'s C++ version can be used to get a reasonable implementation.
 
 ## Common
-All 2 kB ROM banks start at $1800 and require the RESET vector at $1FFC and BRK vector at $1FFE.
+All 2 kB ROM banks start at `$1800` and require the RESET vector at `$1FFC` and `IRQ` vector for `BRK` at $1FFE.
 The initialization of the ACIAs may be common to all banks.
 Maybe a few common routines can be provided too.
 
