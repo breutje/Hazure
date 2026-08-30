@@ -21,8 +21,12 @@ ACIA_STATUS = $1401
 ACIA_CMD    = $1402
 ACIA_CTRL   = $1403
 
+GETCHAR = 1
+PUTCHAR = 2
                 .org    $1800          ; Hazure ROM windows is $1800 .. $1FFF
   
+                BRK     #GETCHAR
+                BRK     #PUTCHAR
 RESET:
                 LDA     #$1F           ; 8-N-1, 19200 baud.
                 STA     ACIA_CTRL
