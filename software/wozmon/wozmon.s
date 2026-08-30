@@ -1,6 +1,6 @@
 ; Ben Eater's 6551 version of Steve Wozniak's wozmon
 ; https://gist.github.com/beneater/8136c8b7f2fd95ccdd4562a498758217
-; modified for Hazure Bert Ruling august 30, 2026
+; modified for Hazure Bert Reuling august 30, 2026
 ; Note: revert to waiting after ECHO if you use a 65C51 rather than the 6551 or 6551A.
 ;
 ; Assemble with: vasm6502_oldstyle -Fbin -dotdir wozmon.s -o wozmon.bin
@@ -195,7 +195,7 @@ TXWAIT:
                 RTS
                 
  
-                .org    $1FFC           ; for Hazure 6507 (for 6502 use $FFFC)
+                .org    $1FFA           ; for Hazure 6507 (for 6502 use $FFFC)
 
                 .word   $0000           ; unused NMI vector
                 .word   RESET           ; RESET vector
