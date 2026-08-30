@@ -1,4 +1,4 @@
-# Hazure 「[▶ 外れ](pronunciation_ja_外れ.mp3)」
+# Hazure 「[外れ](./audio/pronunciation_ja_hazure.mp3)」
 The Hazure is a simple 6507 Single Board Computer.
 
 
