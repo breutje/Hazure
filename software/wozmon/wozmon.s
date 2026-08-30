@@ -4,7 +4,7 @@
 ; Note: revert to waiting after ECHO if you use a 65C51 rather than the 6551 or 6551A.
 ;
 ; Assemble with: vasm6502_oldstyle -Fbin -dotdir wozmon.s -o wozmon.bin
-  
+;
 XAML  = $24                            ; Last "opened" location Low
 XAMH  = $25                            ; Last "opened" location High
 STL   = $26                            ; Store address Low
