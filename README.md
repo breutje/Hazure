@@ -47,7 +47,7 @@ and opens the door for protocols like DEC's [Radial Serial Protocol](http://bits
 - [`SOFTWARE.md`](./SOFTWARE.md) — toolchain, monitor, ROM programming
 - [`NOTES.md`](./NOTES.md) — design decisions and rationale 
 
-[^1]: All sizes use tranditional binary kilobyte notation where 1 kB equals 1024 bytes.
-[^2]: This includes zero page and stack
-[^3]: Each bank includes the RESET and BRK vector at $1FFC
+[^1]: All sizes use tranditional binary kilobyte notation where 1 kB equals 1024 bytes.  
+[^2]: This includes zero page and stack  
+[^3]: Each bank includes the RESET and BRK vector at $1FFC  
 
