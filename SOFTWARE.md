@@ -23,12 +23,12 @@ Ben Eater was using the WDC 65C51.
 This chip has the infamous Transmit Data Register Empty (TDRE) bug.
 The TDRE bit will not reliable be set if the transmit buffer is empty.
 This will lead to infinite loops.
-The usual fix is in the [code]( https://gist.github.com/beneater/8136c8b7f2fd95ccdd4562a498758217) by Ben Eater: add a delay loop.
+The usual fix is in the version of [wozmon.s]( https://gist.github.com/beneater/8136c8b7f2fd95ccdd4562a498758217) modified by Ben Eater: add a delay loop.
 This is not necessary for Hazure, as it uses the original 6551 or 6551A NMOS chips.
 The timing is checked for 19200 bps, but there is a 38400 option that may require a different delay.
 Also, Hazure has the option for a 1.8432 MHz CPU clock.
-I modified Ben Eater's code to use the TDRE.
-Do not attempt to use this on a WDC 65C51 ACIA.
+I modified Ben Eater's code to use the TDRE as intended.
+⚠️ Do not attempt to use this on a WDC 65C51 ACIA.
 
 
 ## Forth
@@ -39,7 +39,7 @@ It will fit in 512 bytes, leaving 1.5 kB spare for extra words and a RDS impleme
 ## LISP
 [sectorLisp](https://github.com/jart/sectorlisp) is a possibility,
 but I'm leaning towards a custom implementation of QuectoLisp, called HazureLISP for the occasion.
-This allows me to utilise the 2 kB ROM bank to the fullest.
+This allows me to utilize the 2 kB ROM bank to the fullest.
 
 
 ## Application
@@ -52,29 +52,29 @@ but various implementations, as well as the original source code can be used as 
 All 2 kB ROM banks start at `$1800` and require the `MNI`, `RESET` and `IRQ` vectors at `$1FFA`.
 The `NMI` vector cannot be used.
 The `RESET` vector should point to the entry point of the software.
-The `IRQ` vestor is still useful as the `BRK` instruction also uses that vector.
+The `IRQ` vector is still useful as the `BRK` instruction also uses that vector.
 Common to all banks:
 
 - vector table at `$1FFA`
-- initialisation of at least the terminal ACIA at `$1400`
+- initialization of at least the terminal ACIA at `$1400`
 - clearing the POST LEDs and lighting a meaningful pattern
-- .org is alwaya at `$1800`
+- .org is always at `$1800`
 
 
 # Disaster recovery
 Experimenting is highly encouraged.
-But it is entirey possible you will "brick" the Hazure at some point.
-In order to speed-up recovery, There is an 8 kB [diagnostics.bin](./diagnostics/diagnostics.bin) image in the `diagnostics` folder on github.
+But it is entirely possible you will "brick" the Hazure at some point.
+In order to speed-up recovery, There is an 8 kB [diagnostics.bin](./diagnostics/diagnostics.bin) image in the `diagnostics` folder on GitHub.
 This image contains several tests.
 The best place to keep it handy is in a 2764 UV EPROM before anything goes wrong.
 Don't forget to add a sticker on the UV window.
 Remove your current ROM and place the 2764.
 Check that all pins seat and that pin 1 is in the right spot.
-Plug in the loopback connectors or use a female-female harwin wire to connect TX with RX.
+Plug in the loop-back connectors or use a female-female Dupont wire to connect TX with RX.
 Set the ROM jumpers for EPROM and power up.
 The detailed instruction is on the [hardware](./HARDWARE.md) page
 The POST LEDs should remain off for about a second.
-The following table will give an indication what the lastest checkpoint has passed.
+The following table will give an indication of the latest checkpoint that has passed.
 Further detailed information can be found on the [diagnostics](./diagnostics/diagnostics.md) page.
 
 
