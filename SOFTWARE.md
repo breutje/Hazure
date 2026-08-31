@@ -74,7 +74,7 @@ Plug in the loop-back connectors or use a female-female Dupont wire to connect T
 Set the ROM jumpers for EPROM and power up.
 The detailed instruction is on the [hardware](./HARDWARE.md) page
 The POST LEDs should remain off for about a second.
-The following table will give an indication of the latest checkpoint that has passed.
+The following table will give an indication of the last checkpoint that has passed.
 Further detailed information can be found on the [diagnostics](./diagnostics/diagnostics.md) page.
 
 
