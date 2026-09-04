@@ -56,7 +56,7 @@ The peripheral bus is exposed on the peripheral board via a 2x12 100 mil right-a
 which mates with a female socket on the CPU board.
 
 | Signal | PIN | PIN | Signal |
-| ---: | :---: | :---: | %--- |
+| ---: | :---: | :---: | :--- |
 | +5V | 1 | 2 | GND |
 | D0 | 3 | 4 | D1 |
 | D2 | 5 | 6 | D3 |
