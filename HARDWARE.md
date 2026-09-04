@@ -55,6 +55,24 @@ The external peripherals are expected to decode the right address further using 
 The peripheral bus is exposed on the peripheral board via a 2x12 100 mil right-angle male header,
 which mates with a female socket on the CPU board.
 
+| Signal | PIN | PIN | Signal |
+| :--- | :---: | :---: | ---: |
+| +5V | 1 | 2 | GND |
+| D0 | 3 | 4 | D1 |
+| D2 | 5 | 6 | D3 |
+| D4 | 7 | 8 | D5 |
+| D6 | 9 | 10 | D7 |
+| A0 | 11 | 12 | A1 |
+| A2 | 13 | 14 | A3 |
+| A4 | 15 | 16 | A5 |
+| A6 | 17 | 18 | A7 |
+| A8 | 19 | 20 | /EXT_IO |
+| Φ2 | 21 | 22 | R/W |
+| /RESET | 23 | 24 | SYS_CLK |
+
+<hr>
+
+
 | Signal | PIN | PIN | Signal  |
 | -----% | %-% | %-% | %------ |
 | +5V    |  1  |  2  | GND     |
@@ -69,5 +87,4 @@ which mates with a female socket on the CPU board.
 | A8     | 19  | 20  | /EXT_IO |
 | Φ2     | 21  | 22  | R/W     |
 | /RESET | 23  | 24  | SYS_CLK |
-
 
