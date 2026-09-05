@@ -29,7 +29,7 @@ and opens the door for protocols like DEC's [Radial Serial Protocol](http://bits
 - 8 kB ROM (four banks of 2 kB, DIP-switch selectable)
 - 8 POST / Blinkenlight LEDs
 - USB-C power
-- 20-pin header for I/O expansion
+- 24-pin header for I/O expansion
 
 
 ## Memory map
