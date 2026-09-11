@@ -49,7 +49,7 @@ but various implementations, as well as the original source code can be used as 
 [Anthony Hay](https://github.com/anthay/ELIZA/tree/master)'s C++ version can be used to get a reasonable implementation.
 
 ## Common
-All 2 kB ROM banks start at `$1800` and require the `MNI`, `RESET` and `IRQ` vectors at `$1FFA`.
+All 2 kB ROM banks start at `$1800` and require the `NMI`, `RESET` and `IRQ` vectors at `$1FFA`.
 The `NMI` vector cannot be used.
 The `RESET` vector should point to the entry point of the software.
 The `IRQ` vector is still useful as the `BRK` instruction also uses that vector.
