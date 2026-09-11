@@ -18,7 +18,7 @@ The memory map in 1kB blocks:
 
 The ROM's are selected using two DIP switches and have 4 banks of 2 kB each.
 
-## Interal I/O
+## Internal I/O
 The 1 kB I/O block is split in internal I/O and external I/O.
 The internal block is 512 bytes ($1400 to $15FF).
 
