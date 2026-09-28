@@ -41,7 +41,7 @@ The 1kB I/O block is used for the 6551 ACIA's and a single 8-bit 74HCT574 POST/B
 ## External I/O
 The external I/O block is the second half of the 1 kB I/O space ($1600 to $17FF).
 This is decoced as `EXT_IO`.
-The external peripherals are expected to decode the right address further using `A0` to `A9`
+The external peripherals are expected to decode the right address further using `A0` to `A8`
 
 ## Projected I/O
 
