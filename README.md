@@ -24,23 +24,20 @@ and opens the door for protocols like DEC's [Radial Serial Protocol](http://bits
 
 ## Features
 - 6507 CPU
-- Dual 6551 ACIA serial ports (TTL-level, 50 to 19200 bps or 38400 bps)
-- 8 kB RAM (2 kB base and two software switchable banks of 3 kB)
+- 8 kB RAM (4 kB base and two software switchable banks of 2 kB)
 - 8 kB ROM (four banks of 2 kB, DIP-switch selectable)
+- Dual ACIA serial ports (TTL-level, 50 to 19200 bps or 38400 bps)
+- I²C 'BUS'
 - 8 POST / Blinkenlight LEDs
-- USB-C power
-- 24-pin header for I/O expansion
-
+- 1 bit RAM BANK select
 
 ## Memory map
 
 | From  | To    | Size[^1] | Function                     |
 | ----- | ----- | -------- | ---------------------------- |
-| $0000 | $07FF | 2 kB     | RAM [^2]                     |
-| $0800 | $13FF | 3 kB     | RAM (Bank RAM0 and RAM1)     |
-| $1400 | $17FF | 1 kB     | I/O space                    |
+| $0000 | $0FFF | 4 kB     | RAM [^2]                     |
+| $1000 | $17FF | 2 kB     | RAM (Bank RAM0 and RAM1)     |
 | $1800 | $1FFF | 2 kB     | ROM (Bank ROM0 to ROM3) [^3] |
-
 
 ## Documentation
 - [`HARDWARE.md`](./HARDWARE.md) — I/O map, clock generation, jumpers, expansion header
