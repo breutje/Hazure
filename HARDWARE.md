@@ -42,13 +42,13 @@ Independent of the ROM switches, $1FE0 to $1FEF is I/O space.
 The ROM socket can take 27C64 (or 2764) EPROMs, 28C64 EEPROMs or FM1608 F-RAMs.
 There is one jumper: write protect / enable.
 
-| Pin | 27C64     | 26C64       | FM1608 | Remark                |
-| :-: | --------- | ----------- | ------ | --------------------- |
-|  1  | VPP /VCC  | RDY/BUSY/NC | NC     | 10k pull-up to Vcc    |
-|  2  | A12       | A12         | A12    | pull-down ROM1 switch |
-| 23  | A11       | A11         | A11    | pull-down ROM0 switch |
-| 26  | NC        | NC          | NC     | leave unconnected     |
-| 27  | /PGM /VCC | /WE         | /WE    | jumper: Vcc or /WE    |
+| Pin | 27C64     | 28C64         | FM1608 | Remark                |
+| :-: | --------- | ------------- | ------ | --------------------- |
+|  1  | VPP /VCC  | RDY-/BUSY /NC | NC     | 10k pull-up to Vcc    |
+|  2  | A12       | A12           | A12    | pull-down ROM1 switch |
+| 23  | A11       | A11           | A11    | pull-down ROM0 switch |
+| 26  | NC        | NC            | NC     | leave unconnected     |
+| 27  | /PGM /VCC | /WE           | /WE    | jumper: Vcc or /WE    |
 
 ## Power & USB
 Power is provided by an USB-C connector and two 5.1 kΩ resistors.
