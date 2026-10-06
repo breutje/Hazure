@@ -9,7 +9,7 @@ The Hazure is a simple 6507 Single Board Computer.
 ## Description
 The [6507](https://en.wikipedia.org/wiki/MOS_Technology_6507) is a cost-reduced
 [6502](https://en.wikipedia.org/wiki/MOS_Technology_6502) variant in a 28-pin DIP package,
-famously used in the [Atari 2600](https://en.wikipedia.org/wiki/Atari_2600) and some floppy disk drives.
+famously used in the [Atari 2600](https://en.wikipedia.org/wiki/Atari_2600), but also some floppy disk drives.
 Because it lacks `A13–A15` address lines it can natively address only 8 kB of memory space without external banking.
 As `IRQ`/`NMI` hardware interrupt pins are also missing, all I/O needs to be polled.
 The software `BRK` however, is available.
@@ -27,6 +27,7 @@ and opens the door for protocols like DEC's [Radial Serial Protocol](http://bits
 - 8 kB RAM (4 kB base and two software switchable banks of 2 kB)
 - 8 kB ROM (four banks of 2 kB, DIP-switch selectable)
 - Dual ACIA serial ports (TTL-level, 50 to 19200 bps or 38400 bps)
+- USB-C power and console
 - I²C 'BUS'
 - 8 POST / Blinkenlight LEDs
 - 1 bit RAM BANK select
