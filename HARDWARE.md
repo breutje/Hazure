@@ -52,7 +52,7 @@ There is one jumper: write protect / enable.
 
 ## Power & USB
 Power is provided by an USB-C connector and two 5.1 kΩ resistors.
-The connector will be an USB4085-GF-A hybrid USB-C connector.
+The connector will be an USB4085-GF-A through-hole USB-C connector.
 There may be a possibility to use a MCP2221 to connect the USB to ACIA #1
 
 
